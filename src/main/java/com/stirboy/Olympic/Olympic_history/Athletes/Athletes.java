@@ -140,11 +140,11 @@ public class Athletes {
         this.Event = Event;
     }
 
-    public String getModel() {
+    public String getMedal() {
         return this.Medal;
     }
 
-    public void setModel(String Medal) {
+    public void setMedal(String Medal) {
         this.Medal = Medal;
     }
 }
