@@ -1,4 +1,4 @@
-package com.stirboy.Olympic.Athletes;
+package com.stirboy.Olympic.Olympic_history.Athletes;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,9 +11,8 @@ import javax.persistence.Table;
 public class Athletes {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-
     private String Name;
     private String Sex;
     private Integer Age;
@@ -22,12 +21,12 @@ public class Athletes {
     private String Team;
     private String NOC;
     private String Games;
-    private Integer Year;
+    private String Year;
     private String Season;
     private String City;
     private String Sport;
     private String Event;
-    private String Model;
+    private String Medal;
 
     public Integer getId() {
         return this.id;
@@ -101,11 +100,11 @@ public class Athletes {
         this.Games = Games;
     }
 
-    public Integer getYear() {
+    public String getYear() {
         return this.Year;
     }
 
-    public void setYear(Integer Year) {
+    public void setYear(String Year) {
         this.Year = Year;
     }
 
@@ -142,10 +141,10 @@ public class Athletes {
     }
 
     public String getModel() {
-        return this.Model;
+        return this.Medal;
     }
 
-    public void setModel(String Model) {
-        this.Model = Model;
+    public void setModel(String Medal) {
+        this.Medal = Medal;
     }
 }
