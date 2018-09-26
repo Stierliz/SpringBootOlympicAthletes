@@ -1,4 +1,5 @@
 CREATE TABLE athletes(
+    TableId int NOT NULL AUTO_INCREMENT,
     Id int NOT NULL,
     Name varchar(255) NOT NULL,
     Sex varchar(50) NOT NULL,
@@ -13,5 +14,6 @@ CREATE TABLE athletes(
     City varchar(30),
     Sport varchar(30),
     Event varchar(255),
-    Medal varchar(10) DEFAULT 'None'
-);
+    Medal varchar(10) DEFAULT 'None',
+    PRIMARY KEY(TableId)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
