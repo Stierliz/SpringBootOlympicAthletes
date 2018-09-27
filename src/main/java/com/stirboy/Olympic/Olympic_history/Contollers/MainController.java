@@ -7,20 +7,22 @@ import com.stirboy.Olympic.Olympic_history.Athletes.Athletes;
 import com.stirboy.Olympic.Olympic_history.Athletes.AthletesRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@RestController
+@Controller
 @RequestMapping(path="/athletes")
-public class Controller {
+public class MainController {
 
     @Autowired
     private AthletesRepository AthletesRepository;
 
     @GetMapping(path="/{id}")
-    public Athletes getAthlete(@PathVariable Integer id){
+    public @ResponseBody Athletes getAthlete(@PathVariable Integer id){
         return AthletesRepository
         .findById(id).get();
     }
@@ -32,12 +34,14 @@ public class Controller {
     // }
 
     @GetMapping(path="/firstTen")
-    public List<Athletes> getFirstTen(){
+    public String getFirstTen(Model model){
         List<Athletes> a = new ArrayList<>();
         for(int i = 1; i <= 10; ++i){
             a.add(AthletesRepository.findById(i).get());
         }
-        return a;
+        model.addAttribute("athletes", a);
+
+        return "index";
     }
 
     @GetMapping(path="/all")

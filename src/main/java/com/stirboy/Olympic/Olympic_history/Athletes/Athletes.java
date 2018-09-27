@@ -1,5 +1,6 @@
 package com.stirboy.Olympic.Olympic_history.Athletes;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,8 +11,11 @@ import javax.persistence.Table;
 @Table(name="athletes")
 public class Athletes {
 
+    private static final String TABLE_ID = "TableId";
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name=TABLE_ID)
+    private Integer TableId;
     private Integer id;
     private String Name;
     private String Sex;
@@ -27,6 +31,37 @@ public class Athletes {
     private String Sport;
     private String Event;
     private String Medal;
+
+    public Athletes(){
+
+    }
+
+    public Athletes(Integer TableId, Integer id, String Name, String Sex, Integer Age, String Height, String Weight, String Team, String NOC, String Games, String Year, String Season, String City, String Sport, String Event, String Medal) {
+        this.TableId = TableId;
+        this.id = id;
+        this.Name = Name;
+        this.Sex = Sex;
+        this.Age = Age;
+        this.Height = Height;
+        this.Weight = Weight;
+        this.Team = Team;
+        this.NOC = NOC;
+        this.Games = Games;
+        this.Year = Year;
+        this.Season = Season;
+        this.City = City;
+        this.Sport = Sport;
+        this.Event = Event;
+        this.Medal = Medal;
+    }
+
+    public Integer getTableId() {
+        return this.TableId;
+    }
+
+    public void setTableId(Integer TableId) {
+        this.TableId = TableId;
+    }
 
     public Integer getId() {
         return this.id;
