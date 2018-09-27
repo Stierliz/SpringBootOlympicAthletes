@@ -41,7 +41,7 @@ public class MainController {
         }
         model.addAttribute("athletes", a);
 
-        return "index";
+        return "firstTen";
     }
 
     @GetMapping(path="/all")

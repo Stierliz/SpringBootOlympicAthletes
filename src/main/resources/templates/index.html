@@ -1,55 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../static/css/Layout.css" th:href="@{/css/Layout.css}" rel="stylesheet" />
-    <title>Athletes Table</title>
+    <title>Main Page</title>
 </head>
 <body>
-    <h1>Athletes</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>TableId</th>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Sex</th>
-                <th>Age</th>
-                <th>Height</th>
-                <th>Weight</th>
-                <th>Team</th>
-                <th>NOC</th>
-                <th>Games</th>
-                <th>Year</th>
-                <th>Season</th>
-                <th>City</th>
-                <th>Sport</th>
-                <th>Event</th>
-                <th>Medal</th>
-            </tr>
-        </thead>
-        <tbody class="tableBody">
-            <tr th:each= "athlete : ${athletes}">
-                <td th:text="${athlete.TableId}"></td>
-                <td th:text="${athlete.Id}"></td>
-                <td th:text="${athlete.Name}"></td>
-                <td th:text="${athlete.Sex}"></td>
-                <td th:text="${athlete.Age}"></td>
-                <td th:text="${athlete.Height}"></td>
-                <td th:text="${athlete.Weight}"></td>
-                <td th:text="${athlete.Team}"></td>
-                <td th:text="${athlete.NOC}"></td>
-                <td th:text="${athlete.Games}"></td>
-                <td th:text="${athlete.Year}"></td>
-                <td th:text="${athlete.Season}"></td>
-                <td th:text="${athlete.City}"></td>
-                <td th:text="${athlete.Sport}"></td>
-                <td th:text="${athlete.Event}"></td>
-                <td th:text="${athlete.Medal}"></td>
-            </tr>
-        </tbody>
-    </table>
+   <p> Go to <a th:href="@{athletes/firstTen}">first Ten</a></p>
 </body>
 </html>
