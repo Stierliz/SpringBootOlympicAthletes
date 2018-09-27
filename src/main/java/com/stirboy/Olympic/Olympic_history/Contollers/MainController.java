@@ -45,7 +45,7 @@ public class MainController {
     }
 
     @GetMapping(path="/all")
-    public Iterable<Athletes> getAll(){
+    public @ResponseBody Iterable<Athletes> getAll(){
         return AthletesRepository.findAll();
     }
 
