@@ -4,7 +4,7 @@
 Web based application with the CRUD functionality. Database consist of data on all Olympic athletes from the 1896 Olympics through Rio 2016. 
 
 
-# Features That Was Used!
+# Features That Are Used!
 
   - Java EE
   - Spring Boot
