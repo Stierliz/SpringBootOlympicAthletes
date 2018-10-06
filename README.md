@@ -65,7 +65,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
-Open file with your favorite IDE and your are set to go
+Open folder with your favorite IDE and your are set to go
 
 
 ### Todos
