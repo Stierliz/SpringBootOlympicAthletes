@@ -76,7 +76,7 @@ Open file with your favorite IDE and your are set to go
 License
 ----
 
-MIT
+[MIT](https://github.com/Stirbul/SpringBootOlympicAthletes/blob/master/LICENSE)
 
 
 [//]: # 
