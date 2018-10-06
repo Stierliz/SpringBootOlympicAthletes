@@ -56,7 +56,7 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 #Validate for flyway
 spring.jpa.hibernate.ddl-auto=validate
 ```
-Also in the file V2__copy.sql you have to specify the exact path to this file in your filesystem
+Also in the file V2__copy.sql you have to specify the exact path to athlete_eventsV2.csv file in your filesystem
 ```sql
 LOAD DATA LOCAL INFILE '/home/alexei/Documents/Codes/Olympic_history/Olympic\ history/athlete_eventsV2.csv'
 INTO TABLE athletes
