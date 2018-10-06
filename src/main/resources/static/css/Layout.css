@@ -1,24 +1,23 @@
-h1{
-    color:darkgreen;
+h1 {
+    color:black;
     text-align: center;
 }
 table {
     border: 1px solid black;
 }
-thead {
-    background-color: #4CAF50;
+.tableHead tr {
+    background-color:blue;
     color: white;
 }
-th, td {
-    padding: 5px;
-    text-align: left;
-}
+
 .tableBody tr:hover {
     background-color: #f5f5f5;
 }
-.tableBody td {
+.tableBody td, th {
     width: auto;
+    padding: 5px;
+    text-align: left;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
-
-
+.tableBody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

@@ -36,7 +36,10 @@ public class Athletes {
 
     }
 
-    public Athletes(Integer TableId, Integer id, String Name, String Sex, Integer Age, String Height, String Weight, String Team, String NOC, String Games, String Year, String Season, String City, String Sport, String Event, String Medal) {
+    public Athletes(Integer TableId, Integer id, String Name, String Sex,
+                    Integer Age, String Height, String Weight, String Team, String NOC,
+                    String Games, String Year, String Season, String City, String Sport,
+                    String Event, String Medal) {
         this.TableId = TableId;
         this.id = id;
         this.Name = Name;
