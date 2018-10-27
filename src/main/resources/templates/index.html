@@ -1,12 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../static/css/Layout.css" th:href="@{/css/Layout.css}" rel="stylesheet"/>
     <title>Main Page</title>
 </head>
 <body>
-   <p> Go to <a th:href="@{athletes/firstTen}">first Ten</a></p>
+<ul>
+    <li><a href="https://www.google.com/" target="_blank">Main Menu</a></li>
+    <li><a>News</a></li>
+    <li><a th:href="@{athletes/showTable}">Contact</a></li>
+    <li style="float:right"><a class="active" href="#about">About</a></li>
+    <li style="float: right;"><a class="registration"
+                                 href="#registration">Registration</a></li>
+</ul>
+<br><br>
+
+<!-- making a grid of responsive images -->
+<div class="row">
+    <div class="column">
+        <div class="imageContainer">
+            <a th:href="@{athletes/Basketball}">
+                <img  src="/static/Pictures/basketball.jpg" th:src="@{Pictures/basketball.jpg}" style="width:100%" class="image"/>
+                <div class="overlay">Basketball</div>
+            </a>
+        </div>
+        <div class="imageContainer">
+            <a th:href="@{athletes/Judo}">
+                <img src="../static/Pictures/judo.jpg" th:src="@{Pictures/judo.jpg}" style="width:100%" class="image">
+                <div class="overlay">Judo</div>
+            </a>
+        </div>
+        <div class="imageContainer">
+            <a th:href="@{athletes/Football}">
+            <img src="../static/Pictures/football.jpg" th:src="@{Pictures/football.jpg}" style="width:100%" class="image">
+            <div class="overlay">Football</div>
+            </a>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/speedSkating.jpg" th:src="@{Pictures/speedSkating.jpg}" style="width:100%" class="image">
+            <div class="overlay">Speed Skating</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/crossCountrySkiing.jpeg" th:src="@{Pictures/crossCountrySkiing.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Cross Country Skiing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/athletics.jpg" th:src="@{Pictures/athletics.jpg}" style="width:100%" class="image">
+            <div class="overlay">Athletics</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/iceHockey.jpg" th:src="@{Pictures/iceHockey.jpg}" style="width:100%" class="image">
+            <div class="overlay">Ice Hockey</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/swimming.jpeg" th:src="@{Pictures/swimming.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Swimming</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/badminton.jpeg" th:src="@{Pictures/badminton.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Badminton</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/sailing.jpeg" th:src="@{Pictures/sailing.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Sailing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/biathlon.jpg" th:src="@{Pictures/biathlon.jpg}" style="width:100%" class="image">
+            <div class="overlay">Biathlon</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/gymnastics.jpg" th:src="@{Pictures/gymnastics.jpg}" style="width:100%" class="image">
+            <div class="overlay">Gymnastics</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/artComp.jpg" th:src="@{Pictures/artComp.jpg}" style="width:100%" class="image">
+            <div class="overlay">Art Competition</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/alpineSkiing.jpg" th:src="@{Pictures/alpineSkiing.jpg}" style="width:100%" class="image">
+            <div class="overlay">Alpine Skiing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/sailing.jpeg" th:src="@{Pictures/sailing.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Sailing</div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="imageContainer">
+            <img src="../static/Pictures/handball.jpg" th:src="@{Pictures/handball.jpg}" style="width:100%" class="image">
+            <div class="overlay">Handball</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/weighlifting.jpg" th:src="@{Pictures/weighlifting.jpg}" style="width:100%" class="image">
+            <div class="overlay">Weightlifting</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/wrestling.jpg" th:src="@{Pictures/wrestling.jpg}" style="width:100%" class="image">
+            <div class="overlay">Wrestling</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/luge.jpeg" th:src="@{Pictures/luge.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Luge</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/waterpolo.jpg" th:src="@{Pictures/waterpolo.jpg}" style="width:100%" class="image">
+            <div class="overlay">Waterpolo</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/rowing.jpg" th:src="@{Pictures/rowing.jpg}" style="width:100%" class="image">
+            <div class="overlay">Rowing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/bobsleigh.jpg" th:src="@{Pictures/bobsleigh.jpg}" style="width:100%" class="image">
+            <div class="overlay">Bobsleigh</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/fencing.jpeg" th:src="@{Pictures/fencing.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Fencing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/equestrianism.jpg" th:src="@{Pictures/equestrianism.jpg}" style="width:100%" class="image">
+            <div class="overlay">Equestrianism</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/shooting.jpg" th:src="@{Pictures/shooting.jpg}" style="width:100%" class="image">
+            <div class="overlay">Shooting</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/boxing.jpg" th:src="@{Pictures/boxing.jpg}" style="width:100%" class="image">
+            <div class="overlay">Boxing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/taekwondo.png" th:src="@{Pictures/taekwondo.png}" style="width:100%" class="image">
+            <div class="overlay">Taekwondo</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/cycling.jpg" th:src="@{Pictures/cycling.jpg}" style="width:100%" class="image">
+            <div class="overlay">Cycling</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/diving.jpg" th:src="@{Pictures/diving.jpg}" style="width:100%" class="image">
+            <div class="overlay">Diving</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/canoeing.jpg" th:src="@{Pictures/canoeing.jpg}" style="width:100%" class="image">
+            <div class="overlay">Canoeing</div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="imageContainer">
+            <img src="../static/Pictures/tennis.jpg" th:src="@{Pictures/tennis.jpg}" style="width:100%" class="image">
+            <div class="overlay">Tennis</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/pentathlon.png" th:src="@{Pictures/pentathlon.png}" style="width:100%" class="image">
+            <div class="overlay">Pentathlone</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/figureSkiing.jpg" th:src="@{Pictures/figureSkiing.jpg}" style="width:100%" class="image">
+            <div class="overlay">Figure Skiing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/golf.jpeg" th:src="@{Pictures/golf.jpeg}" style="width:100%" class="image">
+            <div class="overlay">Golf</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/softball.jpg" th:src="@{Pictures/softball.jpg}" style="width:100%" class="image">
+            <div class="overlay">Softball</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/archery.jpg" th:src="@{Pictures/archery.jpg}" style="width:100%" class="image">
+            <div class="overlay">Archery</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/volleyball.jpg" th:src="@{Pictures/volleyball.jpg}" style="width:100%" class="image">
+            <div class="overlay">Volleyball</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/synchroSwimming.JPG" th:src="@{Pictures/synchroSwimming.JPG}" style="width:100%" class="image">
+            <div class="overlay">Synchronized Swimming</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/tableTennis.jpg" th:src="@{Pictures/tableTennis.jpg}" style="width:100%" class="image">
+            <div class="overlay">Table Tennis</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/nordicCombined.jpg" th:src="@{Pictures/nordicCombined.jpg}" style="width:100%" class="image">
+            <div class="overlay">Nordic Combined</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/baseball.jpg" th:src="@{Pictures/baseball.jpg}" style="width:100%" class="image">
+            <div class="overlay">Baseball</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/rhythmicGynmastics.jpg" th:src="@{Pictures/rhythmicGynmastics.jpg}" style="width:100%" class="image">
+            <div class="overlay">Rhythmic Gynmastics</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/freestyleSkiing.jpg" th:src="@{Pictures/freestyleSkiing.jpg}" style="width:100%" class="image">
+            <div class="overlay">Freestyle Skiing</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/rugby.jpg" th:src="@{Pictures/rugby.jpg}" style="width:100%" class="image">
+            <div class="overlay">Rugby</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/trampolining.jpg" th:src="@{Pictures/trampolining.jpg}" style="width:100%" class="image">
+            <div class="overlay">Trampolining</div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="imageContainer">
+            <img src="../static/Pictures/beachVoleyball.jpg" th:src="@{Pictures/beachVoleyball.jpg}"  style="width:100%" class="image">
+            <div class="overlay">Beach Volleyball</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/triathlon.jpg" th:src="@{Pictures/triathlon.jpg}"  style="width:100%" class="image">
+            <div class="overlay">Triathlon</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/skiJumping.jpg" th:src="@{Pictures/skiJumping.jpg}"  style="width:100%" class="image">
+            <div class="overlay">Ski Jumping</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/curling.jpg" th:src="@{Pictures/curling.jpg}"  style="width:100%" class="image">
+            <div class="overlay">Curling</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/snowboarding.jpg" th:src="@{Pictures/snowboarding.jpg}"  style="width:100%" class="image">
+            <div class="overlay">Snowboarding</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/Rugby.jpg" th:src="@{Pictures/Rugby.jpg}" style="width:100%" class="image">
+            <div class="overlay">Rugby</div>
+        </div>
+        <div class="imageContainer">
+            <img src="resources/Pictures/" style="width:100%" class="image">
+            <div class="overlay">Short Track Speed Skating</div>
+        </div>
+        <div class="imageContainer">
+            <img src="../static/Pictures/skeleton.jpg" style="width:100%" class="image">
+            <div class="overlay">Skeleton</div>
+        </div>
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/falls2.jpg" style="width:100%">
+        <img src="/w3images/paris.jpg" style="width:100%">
+        <img src="/w3images/nature.jpg" style="width:100%">
+        <img src="/w3images/mist.jpg" style="width:100%">
+        <img src="/w3images/paris.jpg" style="width:100%">
+    </div>
+</div>
 </body>
 </html>

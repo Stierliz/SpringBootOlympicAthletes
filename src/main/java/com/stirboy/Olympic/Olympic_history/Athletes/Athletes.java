@@ -11,63 +11,36 @@ import javax.persistence.Table;
 @Table(name="athletes")
 public class Athletes {
 
-    private static final String TABLE_ID = "TableId";
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name=TABLE_ID)
-    private Integer TableId;
+    private Integer tableId;
     private Integer id;
-    private String Name;
-    private String Sex;
-    private Integer Age;
-    private String Height;
-    private String Weight;
-    private String Team;
-    private String NOC;
-    private String Games;
-    private String Year;
-    private String Season;
-    private String City;
-    private String Sport;
-    private String Event;
-    private String Medal;
+    private String name;
+    private String sex;
+    private Integer age;
+    private String height;
+    private String weight;
+    private String team;
+    private String noc;
+    private String games;
+    private String year;
+    private String season;
+    private String city;
+    private String sport;
+    private String event;
+    private String medal;
 
-    public Athletes(){
-
-    }
-
-    public Athletes(Integer TableId, Integer id, String Name, String Sex,
-                    Integer Age, String Height, String Weight, String Team, String NOC,
-                    String Games, String Year, String Season, String City, String Sport,
-                    String Event, String Medal) {
-        this.TableId = TableId;
-        this.id = id;
-        this.Name = Name;
-        this.Sex = Sex;
-        this.Age = Age;
-        this.Height = Height;
-        this.Weight = Weight;
-        this.Team = Team;
-        this.NOC = NOC;
-        this.Games = Games;
-        this.Year = Year;
-        this.Season = Season;
-        this.City = City;
-        this.Sport = Sport;
-        this.Event = Event;
-        this.Medal = Medal;
-    }
 
     public Integer getTableId() {
-        return this.TableId;
+        return tableId;
     }
 
-    public void setTableId(Integer TableId) {
-        this.TableId = TableId;
+    public void setTableId(Integer tableId) {
+        this.tableId = tableId;
     }
 
     public Integer getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(Integer id) {
@@ -75,114 +48,139 @@ public class Athletes {
     }
 
     public String getName() {
-        return this.Name;
+        return name;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getSex() {
-        return this.Sex;
+        return sex;
     }
 
-    public void setSex(String Sex) {
-        this.Sex = Sex;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public Integer getAge() {
-        return this.Age;
+        return age;
     }
 
-    public void setAge(Integer Age) {
-        this.Age = Age;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public String getHeight() {
-        return this.Height;
+        return height;
     }
 
-    public void setHeight(String Height) {
-        this.Height = Height;
+    public void setHeight(String height) {
+        this.height = height;
     }
 
     public String getWeight() {
-        return this.Weight;
+        return weight;
     }
 
-    public void setWeight(String Weight) {
-        this.Weight = Weight;
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 
     public String getTeam() {
-        return this.Team;
+        return team;
     }
 
-    public void setTeam(String Team) {
-        this.Team = Team;
+    public void setTeam(String team) {
+        this.team = team;
     }
 
-    public String getNOC() {
-        return this.NOC;
+    public String getNoc() {
+        return noc;
     }
 
-    public void setNOC(String NOC) {
-        this.NOC = NOC;
+    public void setNoc(String noc) {
+        this.noc = noc;
     }
 
     public String getGames() {
-        return this.Games;
+        return games;
     }
 
-    public void setGames(String Games) {
-        this.Games = Games;
+    public void setGames(String games) {
+        this.games = games;
     }
 
     public String getYear() {
-        return this.Year;
+        return year;
     }
 
-    public void setYear(String Year) {
-        this.Year = Year;
+    public void setYear(String year) {
+        this.year = year;
     }
 
     public String getSeason() {
-        return this.Season;
+        return season;
     }
 
-    public void setSeason(String Season) {
-        this.Season = Season;
+    public void setSeason(String season) {
+        this.season = season;
     }
 
     public String getCity() {
-        return this.City;
+        return city;
     }
 
-    public void setCity(String City) {
-        this.City = City;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getSport() {
-        return this.Sport;
+        return sport;
     }
 
-    public void setSport(String Sport) {
-        this.Sport = Sport;
+    public void setSport(String sport) {
+        this.sport = sport;
     }
 
     public String getEvent() {
-        return this.Event;
+        return event;
     }
 
-    public void setEvent(String Event) {
-        this.Event = Event;
+    public void setEvent(String event) {
+        this.event = event;
     }
 
     public String getMedal() {
-        return this.Medal;
+        return medal;
     }
 
-    public void setMedal(String Medal) {
-        this.Medal = Medal;
+    public void setMedal(String medal) {
+        this.medal = medal;
     }
+
+    public Athletes(){
+
+    }
+
+    public Athletes(Integer id, String name, String sex, Integer age, String height, String weight, String team, String noc, String games, String year, String season, String city, String sport, String event, String medal) {
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.team = team;
+        this.noc = noc;
+        this.games = games;
+        this.year = year;
+        this.season = season;
+        this.city = city;
+        this.sport = sport;
+        this.event = event;
+        this.medal = medal;
+    }
+
+
+
 }
