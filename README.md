@@ -1,4 +1,4 @@
-# Olympic Athletes
+# Olympic History
 
 
 Web based application with the CRUD functionality. Database consist of data on all Olympic athletes from the 1896 Olympics through Rio 2016. 
