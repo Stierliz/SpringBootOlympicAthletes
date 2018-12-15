@@ -1,4 +1,4 @@
-LOAD DATA LOCAL INFILE '/home/alexei/Documents/Codes/Olympic_history/Olympic\ history/athlete_eventsV2.csv'
+LOAD DATA LOCAL INFILE ''
 INTO TABLE athletes
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'

@@ -12,6 +12,7 @@
     <li><a href="https://www.google.com/" target="_blank">Main Menu</a></li>
     <li><a>News</a></li>
     <li><a th:href="@{athletes/showTable}">Contact</a></li>
+    <li><a th:href="@{athletes/addAthlete}">Add New Athlete</a></li>
     <li style="float:right"><a class="active" href="#about">About</a></li>
     <li style="float: right;"><a class="registration"
                                  href="#registration">Registration</a></li>
@@ -40,8 +41,10 @@
             </a>
         </div>
         <div class="imageContainer">
+            <a th:href="@{athletes/Speed Skating}">
             <img src="../static/Pictures/speedSkating.jpg" th:src="@{Pictures/speedSkating.jpg}" style="width:100%" class="image">
             <div class="overlay">Speed Skating</div>
+            </a>
         </div>
         <div class="imageContainer">
             <img src="../static/Pictures/crossCountrySkiing.jpeg" th:src="@{Pictures/crossCountrySkiing.jpeg}" style="width:100%" class="image">

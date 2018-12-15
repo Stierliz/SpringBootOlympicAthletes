@@ -32,6 +32,17 @@ public class MainController {
         return "showTable";
     }
 
+    @PostMapping(path = "/athletes/addAthlete")
+    public String addAthlete(Model model) {
+        model.addAttribute("athletes", new Athletes());
+        return "showTable";
+    }
+
+//    @PostMapping(path = "/athletes/addAthlete")
+//    public String getAddedAthlete(@ModelAttribute Athletes athletes) {
+//        return "showTable";
+//    }
+
 //    @GetMapping(path = "/athletes/{id}")
 //    public /*@ResponseBody Athletes*/ String getAthlete(@PathVariable Integer id, Model model){
 //        model.addAttribute("athletes", AthletesRepository
