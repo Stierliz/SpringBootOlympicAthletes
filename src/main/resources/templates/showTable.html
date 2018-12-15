@@ -8,8 +8,8 @@
     <title>Athletes Table</title>
 </head>
 <body>
-    <h1>Athletes</h1>
     <table>
+        <div class="wrapper">
         <thead class="tableHead">
             <tr>
                 <!--<th class="min">TableId</th>-->
@@ -19,37 +19,38 @@
                 <th>Age</th>
                 <th>Height</th>
                 <th>Weight</th>
-                <th>Team</th>
-                <th>NOC</th>
-                <th>Games</th>
-                <th>Year</th>
-                <th>Season</th>
-                <th>City</th>
-                <th>Sport</th>
-                <th>Event</th>
-                <th>Medal</th>
+                <!--<th>Team</th>-->
+                <!--<th>NOC</th>-->
+                <!--<th>Games</th>-->
+                <!--<th>Year</th>-->
+                <!--<th>Season</th>-->
+                <!--<th>City</th>-->
+                <!--<th>Sport</th>-->
+                <!--<th>Event</th>-->
+                <!--<th>Medal</th>-->
             </tr>
         </thead>
         <tbody class="tableBody">
             <tr th:each= "athlete : ${athletes}">
                 <!--<td th:text="${athlete.tableId}"></td>-->
                 <!--<td th:text="${athlete.id}"></td>-->
-                <td th:text="${athlete.name}"></td>
+                <td th:align="left" th:text="${athlete.name}"></td>
                 <td th:text="${athlete.sex}"></td>
                 <td th:text="${athlete.age}"></td>
                 <td th:text="${athlete.height}"></td>
                 <td th:text="${athlete.weight}"></td>
-                <td th:text="${athlete.team}"></td>
-                <td th:text="${athlete.noc}"></td>
-                <td th:text="${athlete.games}"></td>
-                <td th:text="${athlete.year}"></td>
-                <td th:text="${athlete.season}"></td>
-                <td th:text="${athlete.city}"></td>
-                <td th:text="${athlete.sport}"></td>
-                <td th:text="${athlete.event}"></td>
-                <td th:text="${athlete.medal}"></td>
+                <!--<td th:text="${athlete.team}"></td>-->
+                <!--<td th:text="${athlete.noc}"></td>-->
+                <!--<td th:text="${athlete.games}"></td>-->
+                <!--<td th:text="${athlete.year}"></td>-->
+                <!--<td th:text="${athlete.season}"></td>-->
+                <!--<td th:text="${athlete.city}"></td>-->
+                <!--<td th:text="${athlete.sport}"></td>-->
+                <!--<td th:text="${athlete.event}"></td>-->
+                <!--<td th:text="${athlete.medal}"></td>-->
             </tr>
         </tbody>
+        </div>
     </table>
 </body>
 </html>
